@@ -33,6 +33,11 @@ cd pix3d
 ```
 The Pix3D dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+我下载到了 /data/3dPrinter/0_Dataset_Ori/3_AutoSDF_Datasets/pix3d
+
+<img width="408" alt="Screenshot 2024-07-10 at 3 03 10 PM" src="https://github.com/qingpowuwu/pix3d/assets/140480316/21ce1c50-f747-4df5-bc8b-f386e3ac7f70">
+
+
 ## Dataset
 
 For each instance in Pix3D, we provide the following information (stored in `pix3d.json`):
