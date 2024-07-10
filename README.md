@@ -65,6 +65,33 @@ json.load(open('pix3d.json'))
 
 ## Rendering Demo
 
+### 下载 blender 2.79
+
+```
+(1) Download Blender
+wget https://download.blender.org/release/Blender2.79/latest/blender-2.79-e045fe53f1b0-linux-glibc217-x86_64.tar.bz2
+
+(2) Extract the tarball
+tar -xjf blender-2.79-e045fe53f1b0-linux-glibc217-x86_64.tar.bz2
+
+(3) Navigate to the Blender directory
+cd blender-2.79-e045fe53f1b0-linux-glibc217-x86_64
+
+(4) Run Blender
+./blender
+
+(5) Optional: Create a symbolic link for easier access
+sudo ln -s /path/to/blender-2.79-e045fe53f1b0-linux-glibc217-x86_64/blender /usr/local/bin/blender
+```
+
+### 运行 demo.py
+
+其实实际上应该下载 blender 2.8 以后的，因为这个 demo.py 用的是这个之后的版本。但是我因为下载了 blender 2.79 所以对 demo.py 做了一些修改，并且保存在 /data/3dPrinter/4_pix3d-master/demo_compatible_blender-2_7.py ，我加入了1个 新的 args.command, 所以需要运行：
+
+```
+blender --background --python demo_compatible_blender-2_7.py -- --anno_idx 0 --output_path ./demo.png --model_base_path /data/3dPrinter/0_Dataset_Ori/3_AutoSDF_Datasets/pix3d
+```
+
 Usage:
 ```sh
 blender --background --python demo.py -- --anno_idx <i> --output_path <p>
